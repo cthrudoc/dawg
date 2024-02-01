@@ -1,0 +1,31 @@
+html { 
+    font-family: "roboto" , "sans-serif" ; 
+    background: #eee; 
+    padding: 1rem; 
+    }
+
+body { 
+    max-width: 960px; 
+    margin: 0 auto; 
+    background: white; 
+    }
+
+h1 {
+    font-family: "roboto" ; 
+    color: #377ba8; 
+    margin: 1rem 0; 
+    }
+
+h2 {
+    font-family: "roboto" ; 
+    color: #377ba8 ;  
+    }
+
+ul {
+    font-family: "roboto" ; 
+    color: #377ba8 ;
+    border-style: solid;
+    border-color: #285d80;
+    }
+
+

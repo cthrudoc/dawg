@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lablador</title>
+</head>
+<body>
+    <h1>
+        Labradory<br>
+        <img src="./static/dawg.jpg">  
+        <h2>
+            Opis
+        </h2>
+
+        <ul>
+
+            {% for i in tekst %}
+                <li>{{ i }}</li>
+            {% endfor %}
+            
+        </ul>
+
+    </h1>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>                             
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+
+    <form action="/logowanie" method="post">                <!-- "action" wysyła nas do linka /logowanie (zdefiniowany w app.py),    -->
+        <h3></h3> login:<br>                                <!-- metoda "POST" oznacza, że *wysyłamy* dane do funkcji login() app.py.-->
+        <input type="text" name="username"><br>
+        Password:<br>                                       <!-- "type" określa, jak tekst wygląda na stronie, np. "password" jest   -->
+        <input type="password" name="password"><br><br>     <!-- zamieniony w kropki. "name" to nazwa zmiennej, pasująca do login(). -->
+    <input type="submit" value="Zaloguj się">               <!-- Przycisk "submit" inicjuje wysłanie (POST) zmiennych do login().    -->
+
+    </form>
+
+    <h1> 
+        {{infozwr}}                                         <!-- Informacja zwrotna, różna w zależności od wyniku kodu login()       -->
+    </h1>                                                   <!-- w app.py -->
+
+</body>
+</html>
